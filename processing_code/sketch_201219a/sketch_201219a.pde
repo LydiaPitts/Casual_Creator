@@ -3,17 +3,14 @@
 
 ArrayList<Bubble> bubbles;
 String name = "";
+float textsize = 100;
 boolean looping = true;
 color backcolor = color(255);
 color namecolor = color(0);
-char[] letters ={'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
-                 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 
-                 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A',
-                 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 
-                 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 
-                 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '?', '!',
-                 '.', '\'', '@', '#', '$', '%', '^', '&', '*', 
-                 '(', ')', '-', '_'};
+char[] letters ={'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 
+                 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 
+                 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '?', '!',
+                 '.', '\'', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_'};
  
 void setup() {
   size(1200,600);
@@ -27,9 +24,10 @@ void draw() {
     bub.display();
   }
   fill(namecolor);
-  textSize(100);
   float namewidth = textWidth(name);
-  text(name, 600 - (namewidth/2), 300 );
+  textSize(textsize);
+  textAlign(CENTER, CENTER);
+  text(name, 600 , 300 );
 }
 
 class Bubble {
@@ -57,7 +55,10 @@ class Bubble {
     ellipse(xpos ,ypos , 120, 120);
     fill(lettercolor);
     textSize(100);
-    text(letter, xpos - 25, ypos + 25);
+    float letterWidth = textWidth(letter);
+    text(letter, xpos  - (letterWidth/2), ypos + 30); 
+    fill(255);
+    rect(xpos, ypos, 5,5);
   }
   
   void move(){

@@ -1,10 +1,13 @@
 # Casual_Creator
 Computational Creativity Mission 9: Another Kind of CC. The goal of this mission is to gain experience with the Processing programming language and design and build your own casual creator.
-# A title for your project.
+# Bubbled
+
 A brief overview for your project that includes answers to the brainstorming questions: (1) what are your users casually creating, (2) how do you keep them engaged and excited to create, and (3) how do you help them make something they are proud to share.
 ### What are users creating?
+Using Bubbled, users write have the ability to customize messages. As users type, the message appears horizontally across the screen, and colorful bubbles with the letters from their message bounce randomly around the canvas. Users are able to pause and slowly step through the bubbles progress, change the colors of the message and background, and restart creating with ease. 
 
-### How do I aim to keep users engaged and excited to creat?
+### How do I aim to keep users engaged and excited to create?
+Written words are often very personal. Users can 
 
 ### How do I help make something users are proud to share?
 
