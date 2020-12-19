@@ -10,7 +10,7 @@ A brief overview for your project that includes answers to the brainstorming que
 
 
 
-## How is _project title____ meaningful to me?
+## How is ___project title____ meaningful to me?
 At least 1 paragraph that explains how the system is personally meaningful to you.
 
 
@@ -30,6 +30,11 @@ At least 1 paragraph that explains how working on this system challenged you as 
 Document bugs in your code, if any. (Ideally, you would have no bugs in your final project submission to obtain a perfect score. However, if you find that you have last-minute bugs, it is far better to document them in your README than to have your users discover them on their own.)
 
 ## Works Cited
+- https://hello.processing.org/
+- https://processing.org/tutorials/objects/
+- https://processing.org/reference/ 
+- 
+- 
 Credit any external sources or references.
 
 
