@@ -19,7 +19,11 @@ To run the processing sketch on a browser, simply open index.html in your browse
 ```bash
 cd ./Downloads/Computational\ Creativity/Casual_Creator
 ```
-
+Once there, start the web server with the following command:
+```bash
+python3 -m http.server
+```
+Leave this running, and input ```http://localhost:8000/```into the browser. This should open index.html.
 
 ## How is ___project title____ meaningful to me?
 
