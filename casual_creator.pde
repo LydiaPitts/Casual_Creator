@@ -1,7 +1,19 @@
 /**
 Author: Lydia Pitts
+CSCI 3725: Computational Creativity
+Mission 9: Another Kind of CC
+Last Edited: Dec 20, 2020
 
+The goal of this mission is to gain experience with the Processing programming language and 
+design and build your own casual creator. This creator is called Bubble Buds.
+
+Using Bubble Buds, users have the ability to write customized messages. As users type, the 
+message appears horizontally across the screen, and colorful bubbles with the letters from 
+their message bounce randomly around the canvas. Users are able to pause (Enter Key) and 
+slowly step through the bubbles progress (Right Key), change the colors of the message and 
+background, edit the font (mouse click), and restart creating with ease (Left Key).
 **/
+
 
 
 ArrayList<Bubble> bubbles;
