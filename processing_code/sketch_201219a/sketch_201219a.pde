@@ -2,6 +2,10 @@
 
 
 ArrayList<Bubble> bubbles;
+
+String[] fontList = PFont.list();
+PFont myFont;
+
 String name = "";
 float textsize = 100;
 boolean looping = true;
@@ -10,11 +14,13 @@ color namecolor = color(0);
 char[] letters ={'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 
                  's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 
                  'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '?', '!',
-                 '.', '\'', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_'};
+                 '.', '\'', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '1', '2', '3', '4', '5',
+                 '6', '7', '8', '9', '0', '<', '>', '/', '\\', ':', ';', '~', '+', '=', '`'};
  
 void setup() {
   size(1200,600);
   bubbles = new ArrayList<Bubble>();
+  myFont= createFont("Georgia", 32);
 }
 
 void draw() {
@@ -24,7 +30,6 @@ void draw() {
     bub.display();
   }
   fill(namecolor);
-  float namewidth = textWidth(name);
   textSize(textsize);
   textAlign(CENTER, CENTER);
   text(name, 600 , 300 );
@@ -54,11 +59,9 @@ class Bubble {
     stroke(bubblecolor);
     ellipse(xpos ,ypos , 120, 120);
     fill(lettercolor);
-    textSize(100);
-    float letterWidth = textWidth(letter);
-    text(letter, xpos  - (letterWidth/2), ypos + 30); 
-    fill(255);
-    rect(xpos, ypos, 5,5);
+    textFont(myFont);
+    textSize(80);
+    text(letter, xpos, ypos - 6);
   }
   
   void move(){
@@ -78,8 +81,6 @@ class Bubble {
     }
   }
 } //End of Bubble Class
-
-
 
 
 void keyPressed(){
@@ -112,5 +113,8 @@ void keyPressed(){
 void mousePressed(){
   backcolor = color(random(0, 255),random(0, 255),random(0, 255));
   namecolor = color(random(0, 255),random(0, 255),random(0, 255));
+  int num = int(random(0, fontList.length));
+  String fontName = fontList[num];
+  myFont = createFont(fontName, 32);
   redraw();
 }
