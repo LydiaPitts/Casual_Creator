@@ -2,12 +2,9 @@
 
 
 ArrayList<Bubble> bubbles;
-
 String[] fontList = PFont.list();
 PFont myFont;
-
 String name = "";
-float textsize = 100;
 boolean looping = true;
 color backcolor = color(255);
 color namecolor = color(0);
@@ -30,7 +27,7 @@ void draw() {
     bub.display();
   }
   fill(namecolor);
-  textSize(textsize);
+  textSize(100);
   textAlign(CENTER, CENTER);
   text(name, 600 , 300 );
 }
