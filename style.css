@@ -15,14 +15,15 @@ body {
     color: #D08576;
     text-align: center;
     font-size: 30px;
-    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 5px;
   }
   p {
     color: #2C0703;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
     font-size: 17px;
   }
   canvas {
