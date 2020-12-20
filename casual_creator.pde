@@ -14,8 +14,6 @@ slowly step through the bubbles progress (Right Key), change the colors of the m
 background, edit the font (mouse click), and restart creating with ease (Left Key).
 **/
 
-
-
 ArrayList<Bubble> bubbles;
 String[] fontList = PFont.list();
 PFont myFont;
