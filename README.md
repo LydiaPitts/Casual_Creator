@@ -23,13 +23,10 @@ Once there, start the web server with the following command:
 ```bash
 python3 -m http.server
 ```
-Leave this running, and input ```http://localhost:8000/```into the browser. This should open index.html.
+Input ```http://localhost:8000/``` into the browser - This should open index.html and allow you to interact with Bubble Buds as long as it's still running!
 
-## How is ___project title____ meaningful to me?
-
-
-At least 1 paragraph that explains how the system is personally meaningful to you.
-
+## How is Bubble Buds meaningful to me?
+This project has been meaningful to me because I can use it to create meaninful things in my own life. With the holiday season and birthdays of my loved ones drawing near, I always do my best to make styalized to and from gift tags. I thought it would be a perfect oppotunity to create these tags with Bubble Buds. I can screen shot my messages and attatch them to the gifts. It makes it extra special because I worked so hard to create them. With COVID, I must celebrate remotely with many of my friends. I can screen record the messages I create with Bubble Buds and share moving messages remotely to those who are close to my heart, but pyscially far. I not only learned a lot but I will be able to share it with those I care about.
 
 ## Personal Growth
 At least 1 paragraph that explains how working on this system challenged you as a computer scientist. How did you push yourself outside of your comfort zone? Why was this an important challenge for you? What are the next steps for you going forward?
