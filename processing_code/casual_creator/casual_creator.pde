@@ -109,6 +109,7 @@ void keyPressed(){
       bubbles = new ArrayList<Bubble>();
       backcolor = color(255);
       name = "";
+      loop();
     } else if (keyCode == RIGHT) { //Allows user to step through the bubbles moving when the program is not looping
       redraw();
     }
