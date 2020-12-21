@@ -11,12 +11,13 @@ Using Bubble Buds, users have the ability to write customized messages. As users
 message appears horizontally across the screen, and colorful bubbles with the letters from 
 their message bounce randomly around the canvas. Users are able to pause (Enter Key) and 
 slowly step through the bubbles progress (Right Key), change the colors of the message and 
-background, edit the font (mouse click), and restart creating with ease (Left Key).
+background, edit the font (mouse click, and up/down), and restart creating with ease (Left Key).
 **/
 
 ArrayList<Bubble> bubbles;
 String[] fontList = PFont.list();
 PFont myFont;
+float fontsize = 100;
 String name = "";
 boolean looping = true;
 color backcolor = color(255);
@@ -41,7 +42,7 @@ void draw() {
     bub.display();
   }
   fill(namecolor);
-  textSize(100);
+  textSize(fontsize);
   textAlign(CENTER, CENTER);
   text(name, 600 , 300 );
 }
@@ -96,14 +97,15 @@ class Bubble {
 
 void keyPressed(){
   for( char c : letters){
-      if (key == c){
-        name += c;
+      if (key == c){        
+        String printThis = str(c);
+        name += (printThis);
         Bubble bubble = new Bubble(key);
         bubbles.add(bubble);
       }
   }
   if ( key == ' ' ){
-    name += ' ';
+    name += " ";
   }
   if ( key == ENTER ){
     if(looping){
@@ -122,6 +124,10 @@ void keyPressed(){
       loop();
     } else if (keyCode == RIGHT) { //Allows user to step through the bubbles moving when the program is not looping
       redraw();
+    } else if (keyCode == UP) { //Allows user to step through the bubbles moving when the program is not looping
+      fontsize += 5;
+    } else if (keyCode == DOWN) { //Allows user to step through the bubbles moving when the program is not looping
+      if (fontsize <= 5){ fontsize = 5;} else { fontsize -= 5;}
     }
   }
 }
